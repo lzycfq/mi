@@ -1,0 +1,36 @@
+<scroll-view class="scroll" scroll-y="true" wx:if="{{addressList.length>0}}">
+ <checkbox-group bindchange="checkboxChange">
+  <view wx:for="{{addressList}}" wx:key="{{index}}">
+    <view class="product-name-wrap">
+      <view class="ui-list-item-info"><text data-name='{{item.consignee}}'>{{item.consignee}}</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text> <text data-mobile='{{item.mobile}}'>{{item.mobile}}</text>
+      </view>
+      <view class="ui-list-item-address">
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{item.address}}
+         <label class="checkbox">
+                      <checkbox value="{{index}}"  checked="{{item.checked}}"   bindtap="checkIt" />
+                   
+                    </label>
+        <image class="ui-list-item-del" src='/images/address/shanchu.png' ata-id="{{index}}" bindtap="delAddress"></image>
+        <image class="ui-list-item-xiugai" data-index="{{index}}" src='/images/address/xiugai.png'  bindtap="xiugai"></image>
+        
+      </view>
+      <view class="ui-list-item-time">
+        <p>{{item.transportDay}}</p>
+      
+      </view>
+      <view class="separate"></view>
+    </view>
+  </view>
+  </checkbox-group>
+</scroll-view>
+
+<!--管理地址没有数据，就显示没有数据-->  
+<view class="cartList" wx:if="{{addressList.length===0}}">  
+    <image src="/images/address/sh.png" />  
+    <view>地址管理什么都没有，点击新增收货地址~٩(๑❛ᴗ❛๑)۶~</view>  
+</view>
+
+<view class="add-address" bindtap="addAddress">
+  新增收货地址
+</view>

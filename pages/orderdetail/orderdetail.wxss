@@ -1,0 +1,146 @@
+/* mi_channel_orderdetail/mi_channel_orderdetail.wxss */
+.orderdetail{
+  width: 750rpx;
+  height: 100%;
+  
+}
+.orderdetail_qingdan{
+  width: 750rpx;
+  height: 97rpx;
+  border-top: #ebebeb 10rpx solid;
+  line-height: 97rpx;
+  font-size: 28rpx;
+  border-bottom: #ebebeb 1rpx solid;
+  
+}
+.orderdetail_qingdan text{
+  position: relative;
+  left: 20rpx;
+}
+.qingdan:last-child{
+  border-bottom:none;
+  
+}
+.qingdan{
+  width: 680rpx;
+  height: 97rpx;
+  line-height: 97rpx;
+  margin: 0 auto;
+  border-bottom: #ebebeb 1rpx solid;
+
+}
+.qingdan .qingdan_img{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+ 
+}
+.qingdan .qingdan_img image{
+  width: 100%;
+  height: 100%;
+   vertical-align: middle;
+}
+.qingdan  text{
+  font-size: 25rpx;
+  position: relative;
+  left: 20rpx;
+}
+.qingdan_jiage{
+  float: right;
+  font-size: 25rpx;
+  color: #ff6702;
+}
+.qingdan_jiage label{
+  color: #888888;
+}
+/* 收货地址 */
+.orderdetailadresss{
+  width: 750rpx;
+  height: 100%;
+ 
+  
+}
+/* 电子发票 */
+
+.orderdetailadresss_1{
+  width: 750rpx;
+  height: 100%;
+ 
+ 
+}
+/* 优惠券 */
+
+.orderdetailadresss_2{
+  width: 750rpx;
+  height: 100%;
+  
+ 
+}
+.orderdetailadresss_x{
+   width: 710rpx;
+  height: 97rpx;
+  line-height: 97rpx;
+  margin: 0 auto;
+  font-size: 25rpx;
+  color: #888888;
+
+}
+.dizhi{
+  float: left;
+}
+.dizhi_arrow{
+  float: right;
+ vertical-align: middle;
+ position: relative;
+ top: 27rpx;
+  height: 52rpx;
+  width: 52rpx;
+}
+.dizhi label{
+  color: #222222;}
+/* 
+订单金额 */
+.orderdetailadresss_3 {
+  width: 750rpx;
+  height: 100%;
+  border-bottom: #ebebeb 10rpx solid;  
+  
+}
+.orderdetailadresss_3 .de{
+  float: right;
+  font-size: 25rpx;
+  color: #888888;
+  margin-right:27rpx;
+}
+.orderdetailadresss_3 .de span{
+  color: #ff6702;
+  
+}
+
+.shopall{
+  width: 700rpx;
+  height: 97rpx;
+  line-height: 97rpx;
+  font-size: 25rpx;
+  border-bottom: #ebebeb 1rpx solid;  
+  
+  margin: 0 auto;
+}
+.shopall:last-child{
+  border-bottom: none;  
+  
+}
+
+.shopall label{
+float: right;
+color: #ff6702;
+}
+
+.zf{
+  width: 100%;
+  border-radius: 0;
+  
+  color: white;
+  line-height: 97rpx;
+  height: 97rpx;
+}

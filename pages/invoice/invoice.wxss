@@ -1,0 +1,52 @@
+/* page/invoice/invoice.wxss */
+page{
+  background: #ebebeb;
+}
+.invoice-title{
+  width: 750rpx;
+  height: 80rpx;
+  background: #ebebeb;
+  color: #888888;
+  line-height: 80rpx;
+  font-size: 25rpx;
+}
+.invoice-title view{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.invoice-dianzi{
+  color: #ebebeb;
+  font-size: 23rpx;
+  padding: 30rpx;
+  background: white;
+  line-height: 40rpx;
+}
+.invoice-dianzi text{
+  color: black;
+  font-size: 27rpx;
+
+}
+.nav{width:100%;height:100rpx;display:flex;flex-direction:row; background: white;}
+.default{line-height:100rpx;text-align:center;flex:1;color:#000;font-size:28rpx;}
+.red{line-height:100rpx;text-align:center;color:#fc5558;flex:1;font-size:28rpx;}
+.show{display:block;} 
+.geren{
+  height: 90rpx;
+  font-size: 25rpx;
+  text-indent: 20rpx;
+  background: white;
+  
+}
+.btnview{
+  width:750rpx;
+  
+  color: white;
+  border-top: 30rpx #ebebeb solid;
+}
+.btnform{
+  width:680rpx;
+  background: #fc5558;
+  color: white;
+
+}
+.hidden{display:none;text-align:center;line-height:200px;}

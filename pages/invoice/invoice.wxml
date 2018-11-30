@@ -1,0 +1,37 @@
+<!--page/invoice/invoice.wxml-->
+<view class='invoice-title'><view>发票类型</view></view>
+<!-- 电子发票 -->
+<view class='invoice-dianzi'>
+<text>电子发票</text>
+<view>电子发票与纸质发票具有相同法律效应，可作为报销，售后，维权凭证，推荐使用电子发票，不怕丢失，更方便，环保，选择纸质发票></view>
+</view>
+<!-- 发票抬头 -->
+<view class='invoice-title'><view>发票抬头</view></view>
+   <view class="nav bc_white">
+  <view class="{{selected?'red':'default'}}" bindtap="selected">个人</view>
+  <view class="{{selected1?'red':'default'}}" bindtap="selected1">单位</view>
+  </view>
+   <view class="{{selected?'show':'hidden'}}">
+<form bindsubmit="formSubmitgeren" bindreset="formReset">
+<view class='invoice-title'><view>个人姓名</view></view>
+<input type='text' placeholder='个人' name="name" class='geren'></input>
+<view class='invoice-title'><view>收票人手机</view></view>
+<input type='text' placeholder='电子发票开具后短信通知你（选填）' name="invoice_mobile" class='geren'></input>
+<view class='invoice-title'><view>收票人邮箱</view></view>
+<input type='text' placeholder='用于接收电子发票（选填）' name="invoice_youxiang" class='geren'></input>
+ <view class='btnview'> <button form-type="submit"  class='btnform'>确定</button></view>
+</form>
+ </view>
+ <view class="{{selected1?'show':'hidden'}}">
+ <form bindsubmit="formSubmit" bindreset="formReset">
+<view class='invoice-title'><view>单位名称</view></view>
+<input type='text' placeholder='单位' name="enterprise_name" class='geren'></input>
+<view class='invoice-title'><view>企业税号</view></view>
+<input type='text' placeholder='纳税人识别号或统一社会信用代码' name="enterprise_invoice_shibiema" class='geren'></input>
+<view class='invoice-title'><view>收票人手机</view></view>
+<input type='text' placeholder='电子发票开具后短信通知你（选填）' name="enterprise_invoice_youxiang" class='geren'></input>
+<view class='invoice-title'><view>收票人邮箱</view></view>
+<input type='text' placeholder='用于接收电子发票（选填）' name="enterprise_invoice_youxiang" class='geren'></input>
+ <view class='btnview'> <button form-type="submit"  class='btnform'>确定</button></view>
+</form>
+ </view>

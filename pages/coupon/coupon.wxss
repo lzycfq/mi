@@ -1,0 +1,35 @@
+/* page/coupon/coupon.wxss */
+page{
+  background: #ebebeb;
+}
+.invoice-title{
+  width: 750rpx;
+  height: 80rpx;
+  background: #ebebeb;
+  color: #888888;
+  line-height: 80rpx;
+  font-size: 25rpx;
+}
+.invoice-title view{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.geren{
+  height: 90rpx;
+  font-size: 25rpx;
+  text-indent: 20rpx;
+  background: white;
+  
+}
+.btnview{
+  width:750rpx;
+  
+  color: white;
+  border-top: 30rpx #ebebeb solid;
+}
+.btnform{
+  width:680rpx;
+  background: #fc5558;
+  color: white;
+
+}

@@ -1,0 +1,50 @@
+<!--mi_channel_orderdetail/mi_channel_orderdetail.wxml-->
+<!-- 购物清单 -->
+<view class='orderdetail'>
+<view class='orderdetail_qingdan'><text>购物清单</text></view>
+<view class='qingdan'><view class='qingdan_img'><image src='/images/6x.jpg' mode='widthFix'></image></view>
+<text>小米6x 4+64</text><view class='qingdan_jiage'><label>1x </label>1999</view></view>
+</view>
+<!-- 收货地址数据存在 -->
+<view class='orderdetailadresss'  wx:for="{{address}}" wx:key="{{index}}" wx:if="{{address.length>0}}">
+<block wx:if="{{index<1}}">
+<navigator url='/addressList/addressList'>
+<view class='orderdetail_qingdan'><text>收货地址</text></view>
+<view class='orderdetailadresss_x'><view class='dizhi'>{{item.consignee}} <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{item.mobile}} <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{item.address}}</view><image class='dizhi_arrow' src='/images/cover/right_arrow.png'></image></view>
+</navigator>
+</block>
+</view>
+<!-- 收货数据地址不存在 -->
+<view class='orderdetailadresss' wx:if="{{address.length===0}}">
+<navigator url='/addressList/addressList'>
+<view class='orderdetail_qingdan'><text>收货地址</text></view>
+<view class='orderdetailadresss_x'><view class='dizhi'>添加收货地址</view><image class='dizhi_arrow' src='/images/cover/right_arrow.png'></image></view>
+</navigator>
+</view>
+<!-- 电子发票 -->
+<view class='orderdetailadresss_1'wx:for="{{invoicegeren}}" wx:key="{{index}}" wx:if="{{invoicegeren.length>0}}" >
+<navigator url='/page/invoice/invoice'>
+<block wx:if="{{index<1}}">
+<view class='orderdetail_qingdan'><text>电子发票</text></view>
+<view class='orderdetailadresss_x'><view class='dizhi'>电子发票：<label>{{item.name}}</label></view><image class='dizhi_arrow' src='/images/cover/right_arrow.png'></image></view>
+</block>
+</navigator>
+</view>
+<view class='orderdetailadresss_1' wx:if="{{invoicegeren.length===0}}" >
+<navigator url='/page/invoice/invoice'>
+<view class='orderdetail_qingdan'><text>电子发票</text></view>
+<view class='orderdetailadresss_x'><view class='dizhi'>电子发票：<label>请填写发票信息</label></view><image class='dizhi_arrow' src='/images/cover/right_arrow.png'></image></view>
+</navigator>
+</view>
+<!-- 优惠券 -->
+<view class='orderdetailadresss_2'>
+<view class='orderdetail_qingdan'><text>优惠券</text></view>
+<view class='orderdetailadresss_x'><view class='dizhi'><label>未使用优惠券</label></view><image class='dizhi_arrow' src='/images/cover/right_arrow.png'></image></view>
+</view>
+<!-- 订单金额 -->
+<view class='orderdetailadresss_3'>
+<view class='orderdetail_qingdan'><text>订单金额</text><label class='de'>应付：<span>1999元</span></label></view>
+<view class='shopall'><text>商品总价</text><label class=''>1999元</label></view>
+<view class='shopall'><text>运费</text><label>0元</label></view>
+</view>
+<button class='zf' type='primary'>使用微信支付</button>
