@@ -11,7 +11,7 @@
                       <checkbox value="{{index}}"  checked="{{item.checked}}"   bindtap="checkIt" />
                    
                     </label>
-        <image class="ui-list-item-del" src='/images/address/shanchu.png' ata-id="{{index}}" bindtap="delAddress"></image>
+        <image class="ui-list-item-del" src='/images/address/shanchu.png' data-id="{{index}}" bindtap="delAddress"></image>
         <image class="ui-list-item-xiugai" data-index="{{index}}" src='/images/address/xiugai.png'  bindtap="xiugai"></image>
         
       </view>

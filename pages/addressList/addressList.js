@@ -33,7 +33,7 @@ Page({
   },
 
   addAddress: function () {
-    wx.navigateTo({ url: '/address/address' });
+    wx.navigateTo({ url: '/pages/address/address' });
   },
   /* 删除item */
   delAddress: function (e) {
@@ -73,7 +73,7 @@ Page({
     arr.push(address);
     wx.setStorageSync('address', arr);
     wx: wx.navigateTo({
-      url: 'page/mi_channel_Orderdetail/mi_channel_Orderdetail',
+      url: '/pages/orderdetail/orderdetail',
 
     })
   },
@@ -101,7 +101,7 @@ Page({
     arr.push(xiugaiaddress);
     wx.setStorageSync('xiugaiaddress', arr);
     wx: wx.navigateTo({
-      url: 'page/address/address',
+      url: 'pages/address/address',
 
     })
   },

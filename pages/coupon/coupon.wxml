@@ -1,8 +1,7 @@
 <!--page/coupon/coupon.wxml-->
 <view class='invoice-title'><view>发票类型</view></view>
 <form bindsubmit="formSubmitgeren" bindreset="formReset">
-<input type='text' placeholder='个人' name="couponnumber" class='geren'></input>
-
+<input type='text' placeholder='输入兑换嘛' name="couponnumber" class='geren'></input>
  <view class='btnview'> <button form-type="submit"  class='btnform'>确定</button></view>
 </form>
 

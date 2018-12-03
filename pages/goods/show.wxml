@@ -4,7 +4,7 @@
         <swiper class="slide" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
             <block wx:for="{{goods.goods_slides}}" wx:key="{{index}}">
                 <swiper-item>
-                    <image src="{{item.slide_url}}" mode="widthFix" class="slide-image" data-id="{{item.id}}" bindtap="previewImage"/>
+                    <image src="{{item.slide_url}}" data-slide_url="{{item.slide_url}}" mode="widthFix" class="slide-image" data-id="{{item.id}}" bindtap="previewImage"/>
                 </swiper-item>
             </block>
         </swiper>
@@ -69,6 +69,7 @@
             <image src="../../assets/icons/cart.png" />
         </view>
         <view class="add-cart" bindtap="toSelect" data-id="{{goods.id}}">加入购物车</view>
-        <view class="btn-buy-now">立即购买</view>
+        <!-- 获取商品跳转id,信息传入订单详情列表 -->
+        <view class="btn-buy-now" bindtap='nowbuy' data-indexs="{{indexs}}">立即购买</view>
     </view>
 </view>

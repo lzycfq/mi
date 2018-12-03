@@ -1,4 +1,7 @@
 /* mi_channel_orderdetail/mi_channel_orderdetail.wxss */
+page{
+  background: white;
+}
 .orderdetail{
   width: 750rpx;
   height: 100%;

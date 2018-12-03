@@ -1,4 +1,5 @@
 // pages/goods/show.js
+var ordernowbuy = null;
 const app=getApp();
 
 Page({
@@ -64,7 +65,35 @@ Page({
       goods:goods[0]
     });
   },
+nowbuy:function(e){
+var that=this
+var indexs=e.target.dataset.indexs
+  console.log(e.target.dataset.indexs)
+  var slide_url = this.data.goods[indexs].goods_slides[0];
+  var header = this.data.goods[indexs].header;
+  var defaults = this.data.goods[indexs].default;
+  var meta = this.data.goods[indexs].meta;
 
+  console.log(this.data.goods[indexs].goods_slides);
+  console.log(this.data.goods[indexs].header);
+  console.log(this.data.goods[indexs].default);
+  console.log(this.data.goods[indexs].meta);
+  
+  var arr = wx.getStorageSync('ordernowbuy') || [];
+  console.log("arr,{}", arr);
+  ordernowbuy={
+    slide_url:slide_url,
+    header:header,
+    defaults:defaults,
+    meta: meta
+  }
+  arr.push(ordernowbuy);
+  wx.setStorageSync('ordernowbuy', arr);
+  wx: wx.navigateTo({
+    url: '/pages/orderdetail/orderdetail',
+
+  })
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -48,7 +48,7 @@ Page({
     arr.push(invoicegeren);
     wx.setStorageSync('invoicegeren', arr);
     wx: wx.navigateTo({
-      url: '/page/mi_channel_Orderdetail/mi_channel_Orderdetail',
+      url: '/pages/orderdetail/orderdetail',
 
     })
   },

@@ -1,4 +1,5 @@
 // mi_channel_orderdetail/mi_channel_orderdetail.js
+
 Page({
 
   /**
@@ -28,6 +29,13 @@ Page({
     // 更新数据  
     this.setData({
       invoicegeren: arr.reverse()
+    });
+    // 订单详情
+    var arr = wx.getStorageSync('ordernowbuy') || []
+    console.info("缓存数据：" + arr);
+    // 更新数据  
+    this.setData({
+      ordernowbuy: arr.reverse()
     });
   },
 
