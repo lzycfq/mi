@@ -12,7 +12,7 @@
                    
                     </label>
         <image class="ui-list-item-del" src='/images/address/shanchu.png' data-id="{{index}}" bindtap="delAddress"></image>
-        <image class="ui-list-item-xiugai" data-index="{{index}}" src='/images/address/xiugai.png'  bindtap="xiugai"></image>
+        <image class="ui-list-item-xiugai" data-index="{{index}}" src='../../assets/gouwuche.png'  bindtap="xiugai"></image>
         
       </view>
       <view class="ui-list-item-time">

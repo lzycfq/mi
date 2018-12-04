@@ -70,6 +70,6 @@
         </view>
         <view class="add-cart" bindtap="toSelect" data-id="{{goods.id}}">加入购物车</view>
         <!-- 获取商品跳转id,信息传入订单详情列表 -->
-        <view class="btn-buy-now" bindtap='nowbuy' data-indexs="{{indexs}}">立即购买</view>
+        <view class="btn-buy-now" bindtap='nowbuy' data-index="{{index}}" >立即购买</view>
     </view>
 </view>
