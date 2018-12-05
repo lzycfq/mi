@@ -9,12 +9,13 @@
     </view>
 </view>
 <view wx:else>
+<block  wx:for="{{cart_list}}" wx:key="{{index}}">
     <view class="cart-box">
-        <view class="cart-list" wx:for="{{cart_list}}" wx:key="{{index}}">
+        <view class="cart-list">
             <view class="cart-item {{item.isTouchMove? 'touch-move-active': ''}}" bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
                 <view class="cart-content">
-                    <icon type="{{item.selected?'success':'circle'}}" class="" color="#ff6700" size="20" bindtap="selectList" data-index="{{index}}"
-                    />
+                    <icon wx:if="{{item.selected}}" type="success" color="red" bindtap="selectList" data-index="{{index}}" />
+        <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}"/>
                     <image src="{{item.cover}}"
                         mode="aspectFill" />
                     <text class="item-title">{{item.goods_name}} {{item.memory}}</text>
@@ -35,6 +36,7 @@
         <view class="total-price">合计：
             <text>{{totalPrice}}元</text>
         </view>
-        <view class="btn-primary pay" bindtap="checkOut">结算</view>
+        <view class="btn-primary pay" bindtap="checkOut" data-index="{{index}}">结算</view>
     </view>
+    </block>
 </view>

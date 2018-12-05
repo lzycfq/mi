@@ -1,6 +1,6 @@
 // pages/cart/cart.js
 const app = getApp();
-
+var cartorderdetail=null
 Page({
 
   /**
@@ -18,30 +18,36 @@ Page({
       url: "../index/index"
     })
   },
+
   selectList(e) {
-    let selectAllStatus = this.data.selectAllStatus;
-    const index = e.currentTarget.dataset.index;
-    let cart_list = this.data.cart_list;
-    // console.log(cart_list[index].selected);
-    const selected = cart_list[index].selected;
-    cart_list[index].selected = !selected;
-    console.log(selected);
-    //购物车列表里的条目只要有一个取消，全选就取消
-    const symbol = cart_list.some(cart => {
-      return cart.selected === false;
-    });
-    if (symbol) {
-      this.data.selectAllStatus = false;
-    } else {
-      this.data.selectAllStatus = true;
+    const index = e.currentTarget.dataset.index;    // 获取data- 传进来的index
+    let cart_list = this.data.cart_list;                    // 获取购物车列表
+    let selectAllStatus = this.data.selectAllStatus;  //获取全选状态
+    const selected = cart_list[index].selected;         // 获取当前商品的选中状态
+    cart_list[index].selected = !selected;              // 改变状态
+    cart_list[index]['selected'] = !selected;
+    //判断有一个没有选中，全选取消
+    let j = 0;
+    for (let i = 0; i < cart_list.length; i++) {
+      if (cart_list[i].selected == true) {
+        j++;
+        continue;
+      } else {
+        selectAllStatus = false;
+      }
+    }
+    if (j == cart_list.length) {
+      selectAllStatus = true;
     }
 
+    //如果都选中，全选也选中实现
     this.setData({
-      cart_list,
-      selectAllStatus: this.data.selectAllStatus
+      cart_list: cart_list,
+      selectAllStatus: selectAllStatus,
     });
-    this.getTotalPrice();
+    this.getTotalPrice();                           // 重新获取总价
   },
+
   getTotalPrice() {
     let cart_list = this.data.cart_list;
     let totalPrice = 0;
@@ -128,6 +134,75 @@ Page({
       cart_list: this.data.cart_list
     });
   },
+// 结算实现
+  checkOut(e){
+// var that=this
+// var index=e.currentTarget.dataset.index
+//     var cover = that.data.cart_list[index].cover
+//     var goods_name = that.data.cart_list[index].goods_name
+//     var color = that.data.cart_list[index].color   
+//     var memory = that.data.cart_list[index].memory
+//     var select_num = that.data.cart_list[index].select_num
+//     var price = that.data.cart_list[index].price
+//     console.log(goods_name + "," + memory + "," + select_num + "," + price); //输出该文本 
+//     var arr = wx.getStorageSync('cartorderdetail') || [];
+//     console.log("arr,{}", arr);
+//     cartorderdetail = {
+//       goods_name: goods_name,
+//       memory: memory,
+//       select_num: select_num,
+//       price: price,
+//       cover:cover,
+//       color: color
+
+//     }
+//     arr.push(cartorderdetail);
+//     wx.setStorageSync('cartorderdetail', arr);
+//     wx: wx.navigateTo({
+//       url:"/pages/orderdetail/orderdetail"
+
+//     })
+
+    // var postId = event.currentTarget.dataset.postid;
+    // var postId = event.currentTarget.dataset.postid;
+    var that = this;
+    var cart = [];
+    var carts = this.data.cart_list;
+    var address = wx.getStorageSync('addressInfo');
+    // console.log(user)
+    for (let i = 0; i < carts.length; i++) {
+      if (carts[i].selected == true) {
+        cart.push(carts[i])   //获取选中的项
+      }
+    }
+    wx.setStorageSync('order', cart);//过滤掉未选中的购物车商品
+    console.log(cart);
+    var order = wx.getStorageSync('order');
+    // console.log(order);
+    // 未选中商品不能跳转
+    if (order.length == 0) {
+      wx.showModal({
+        title: '请选择商品',
+        // content: '未选中商品',
+        success: function (res) {
+          if (res.confirm) {
+            // console.log('用户点击确定')
+          } else if (res.cancel) {
+            // console.log('用户点击取消')
+          }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '/pages/orderdetail/orderdetail?totalPrice=' + that.data.totalPrice
+      })
+    }
+
+
+  },
+
+
+ 
   /**
    * 生命周期函数--监听页面加载
    */

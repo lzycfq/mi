@@ -67,18 +67,17 @@ Page({
   },
 nowbuy:function(e){
 var that=this
-  var index = e.currentTarget.index
-  
-  console.log(e.currentTarget.index)
-  var slide_url = this.data.goods.goods_slides[0];
-  var header = this.data.goods.header;
-  var defaults = this.data.goods.default;
-  var meta = this.data.goods.meta;
+  var index = e.target.dataset.index
+  console.log(e.target.dataset.index)
+  var slide_url = that.data.goods.goods_slides[0];
+  var header = that.data.goods.header;
+  var defaults = that.data.goods.default;
+  var meta = that.data.goods.meta;
 
-  console.log(this.data.goods.goods_slides);
-  console.log(this.data.goods.header);
-  console.log(this.data.goods.default);
-  console.log(this.data.goods.meta);
+  console.log(that.data.goods.goods_slides);
+  console.log(that.data.goods.header);
+  console.log(that.data.goods.default);
+  console.log(that.data.goods.meta);
   
   var arr = wx.getStorageSync('ordernowbuy') || [];
   console.log("arr,{}", arr);

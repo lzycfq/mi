@@ -1,13 +1,25 @@
 <!--mi_channel_orderdetail/mi_channel_orderdetail.wxml-->
 <!-- 购物清单 -->
-<view class='orderdetail'>
+<block wx:if="{{true}}">
+<view class='orderdetail' >
 <view class='orderdetail_qingdan'><text>购物清单</text></view>
-<block wx:for="{{ordernowbuy}}" wx:key="{{index}}">
+<block wx:for="{{ordernowbuy}}" wx:key="{{index}}" >
 <view class='qingdan'><view class='qingdan_img'><image src='{{item.slide_url.slide_url}}' mode='widthFix'></image></view>
 <text>{{item.header}} {{item.defaults[0]}} {{item.defaults[1]}}</text><view class='qingdan_jiage'><label>x{{item.defaults[2]}} </label>{{item.meta}}</view>
 </view>
 </block>
 </view>
+</block>
+<block wx:if="{{true}}">
+<view class='orderdetail' >
+<view class='orderdetail_qingdan'><text>购物清单</text></view>
+<block wx:for="{{cartorderdetail}}" wx:key="{{index}}" >
+<view class='qingdan'><view class='qingdan_img'><image src='{{item.cover}}' mode='widthFix'></image></view>
+<text>{{item.goods_name}} {{item.memory}} {{item.color}}</text><view class='qingdan_jiage'><label>x{{item.select_num}} </label>{{item.price}}</view>
+</view>
+</block>
+</view>
+</block>
 <!-- 收货地址数据存在 -->
 <view class='orderdetailadresss'  wx:for="{{address}}" wx:key="{{index}}" wx:if="{{address.length>0}}">
 <block wx:if="{{index<1}}">
@@ -46,12 +58,15 @@
 <view class='orderdetailadresss_x'><view class='dizhi'><label>未使用优惠券</label></view><image class='dizhi_arrow' src='../../assets/right_arrow.png'></image></view>
 </navigator>
 </view>
-<!-- 订单金额 -->
+<!-- 立即购买订单金额 -->
+
 <view class='orderdetailadresss_3'>
-<block wx:for="{{ordernowbuy}}" wx:key="{{index}}" wx:if="{{index<1}}">
-<view class='orderdetail_qingdan'><text>订单金额</text><label class='de'>应付：<span>{{item.meta}}</span></label></view>
-<view class='shopall'><text>商品总价</text><label class=''>{{item.meta}}</label></view>
+
+<view class='orderdetail_qingdan'><text>订单金额</text><label class='de'>应付：<span>{{totalPrice}}</span></label></view>
+<view class='shopall'><text>商品总价</text><label class=''>{{totalPrice}}</label></view>
 <view class='shopall'><text>运费</text><label>0元</label></view>
-</block>
+
 </view>
+
+
 <button class='zf' type='primary'>使用微信支付</button>

@@ -9,7 +9,8 @@ Page({
     address:[],
     invoicegeren:[],
     invoicegeren:true,
-    address:true
+    address:true,
+
   },
 
   /**
@@ -36,6 +37,13 @@ Page({
     // 更新数据  
     this.setData({
       ordernowbuy: arr.reverse()
+    });
+    // 购物车数据导入
+    var arr = wx.getStorageSync('cartorderdetail') || []
+    console.info("缓存数据：" + arr);
+    // 更新数据  
+    this.setData({
+      cartorderdetail: arr.reverse()
     });
   },
 
