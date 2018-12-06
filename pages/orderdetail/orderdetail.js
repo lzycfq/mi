@@ -1,5 +1,4 @@
 // mi_channel_orderdetail/mi_channel_orderdetail.js
-
 Page({
 
   /**
@@ -10,6 +9,9 @@ Page({
     invoicegeren:[],
     invoicegeren:true,
     address:true,
+    cartorderdetail:"",
+    index:'',
+    totalPrice:''
 
   },
 
@@ -17,6 +19,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  
+    var that=this
     //收货地址
     var arr = wx.getStorageSync('address') || [];
     console.info("缓存数据：" + arr);
@@ -39,12 +43,27 @@ Page({
       ordernowbuy: arr.reverse()
     });
     // 购物车数据导入
-    var arr = wx.getStorageSync('cartorderdetail') || []
-    console.info("缓存数据：" + arr);
-    // 更新数据  
-    this.setData({
-      cartorderdetail: arr.reverse()
-    });
+    wx.getStorage({
+      key: 'order',
+      success: function(res) {
+        that.setData({
+        cartorderdetail:res.data
+        })
+        
+      },
+    })
+   
+    // 参数跳转显示
+    var arrs = options.index
+    console.log(options)
+    that.setData({
+      index: arrs
+    })
+ 
+    var arr = options.totalPrice
+    that.setData({
+      totalPrice: arr
+    })
   },
 
   /**

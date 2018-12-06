@@ -11,14 +11,23 @@ Page({
     totalPrice: 0,
     selectAllStatus: false,
     startX: 0, //开始坐标
-    startY: 0
+    startY: 0,
+    index:'购物清单'
+   
   },
   goIndex() {
     wx.switchTab({
       url: "../index/index"
     })
   },
+  toSelect(e) {
+    const id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: `../selectGoods/selectGoods?id=${id}`
+    });
+  },
 
+  
   selectList(e) {
     const index = e.currentTarget.dataset.index;    // 获取data- 传进来的index
     let cart_list = this.data.cart_list;                    // 获取购物车列表
@@ -168,7 +177,6 @@ Page({
     var that = this;
     var cart = [];
     var carts = this.data.cart_list;
-    var address = wx.getStorageSync('addressInfo');
     // console.log(user)
     for (let i = 0; i < carts.length; i++) {
       if (carts[i].selected == true) {
@@ -194,7 +202,7 @@ Page({
       })
     } else {
       wx.navigateTo({
-        url: '/pages/orderdetail/orderdetail?totalPrice=' + that.data.totalPrice
+        url: '/pages/orderdetail/orderdetail?totalPrice=' + that.data.totalPrice + '&index=' + that.data.index
       })
     }
 

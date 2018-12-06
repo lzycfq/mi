@@ -1,15 +1,17 @@
 {
     "pages": [
+      "pages/order/order",
+      "pages/mine/mine",
+      
       "pages/index/index",
-        "pages/orderdetail/orderdetail",
+      "pages/orderdetail/orderdetail",
         "pages/addressList/addressList",
         "pages/address/address",
         "pages/coupon/coupon",
         "pages/invoice/invoice",
         
         "pages/cart/cart",
-        "pages/mine/mine",
-   
+       
    
         "pages/logs/logs",
         "pages/categories/categories",

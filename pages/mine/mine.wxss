@@ -6,7 +6,14 @@
 .weui-cell.head {
     padding: 8px 14px;
 }
-
+.headerimg{
+  width: 95rpx;
+  height: 95rpx;
+  overflow: hidden;
+  margin-right: 18px;
+    margin-left: 5rpx;
+    vertical-align: middle;
+}
 .weui-cell__hd.head image{
     width: 120rpx;
     height: 120rpx;

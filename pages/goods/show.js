@@ -11,7 +11,9 @@ Page({
     goods:[],
     selected:true,
     selected1:false,
-    goods_num:"" 
+    goods_num:"", 
+    gouqingdan:"购物清单"
+ 
   },
   selectBrief(e){
     this.setData({
@@ -73,7 +75,7 @@ var that=this
   var header = that.data.goods.header;
   var defaults = that.data.goods.default;
   var meta = that.data.goods.meta;
-
+  var gouqingdan = that.data.gouqingdan
   console.log(that.data.goods.goods_slides);
   console.log(that.data.goods.header);
   console.log(that.data.goods.default);
@@ -85,15 +87,18 @@ var that=this
     slide_url:slide_url,
     header:header,
     defaults:defaults,
-    meta: meta
+    meta: meta,
+    gouqingdan: gouqingdan
   }
   arr.push(ordernowbuy);
   wx.setStorageSync('ordernowbuy', arr);
   wx: wx.navigateTo({
-    url: '/pages/orderdetail/orderdetail',
+    url: '/pages/orderdetail/orderdetail?gouqingdan='+that.data.gouqingdan
 
   })
 },
+ 
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

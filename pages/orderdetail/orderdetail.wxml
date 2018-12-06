@@ -2,8 +2,8 @@
 <!-- 购物清单 -->
 <block wx:if="{{true}}">
 <view class='orderdetail' >
-<view class='orderdetail_qingdan'><text>购物清单</text></view>
-<block wx:for="{{ordernowbuy}}" wx:key="{{index}}" >
+<block wx:for="{{ordernowbuy}}" wx:key="{{index}}" wx:if="{{index<1}}">
+<view class='orderdetail_qingdan'><text>{{item.gouqingdan}}</text></view>
 <view class='qingdan'><view class='qingdan_img'><image src='{{item.slide_url.slide_url}}' mode='widthFix'></image></view>
 <text>{{item.header}} {{item.defaults[0]}} {{item.defaults[1]}}</text><view class='qingdan_jiage'><label>x{{item.defaults[2]}} </label>{{item.meta}}</view>
 </view>
@@ -12,7 +12,7 @@
 </block>
 <block wx:if="{{true}}">
 <view class='orderdetail' >
-<view class='orderdetail_qingdan'><text>购物清单</text></view>
+<view class='orderdetail_qingdan'><text>{{index}}</text></view>
 <block wx:for="{{cartorderdetail}}" wx:key="{{index}}" >
 <view class='qingdan'><view class='qingdan_img'><image src='{{item.cover}}' mode='widthFix'></image></view>
 <text>{{item.goods_name}} {{item.memory}} {{item.color}}</text><view class='qingdan_jiage'><label>x{{item.select_num}} </label>{{item.price}}</view>

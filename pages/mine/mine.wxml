@@ -1,12 +1,13 @@
 <!--pages/mine/mine.wxml-->
+
 <view class="container">
     <view class="weui-cells">
         <view class="weui-cell">
-            <view class="weui-cell__hd head">
-                <image src="../../assets/yonghupic.jpg"></image>
+            <view class="weui-cell__hd head headerimg">
+                <open-data type="userAvatarUrl" class='userAvatarUrl'></open-data>
             </view>
             <view class="weui-cell__bd">
-                <view class="name">深藏功与名</view>
+                <view class="name"><open-data type="userNickName"></open-data></view>
                 <view class="account" bindtap="bindAccount">
                     绑定小米账号
                 </view>
@@ -19,7 +20,7 @@
         </view>
     </view>
     <view class="weui-cells">
-        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/score/score">
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/order/order">
             <view class="weui-cell__hd">
                 <image src="../../assets/icons/order.png" />
             </view>
