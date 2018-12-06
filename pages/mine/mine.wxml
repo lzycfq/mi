@@ -26,13 +26,13 @@
             </view>
             <view class="weui-cell__bd">我的订单</view>
         </navigator>
-        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="../addr/addr">
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/addressList/addressList">
             <view class="weui-cell__hd">
                 <image src="../../assets/icons/addr.png" />
             </view>
             <view class="weui-cell__bd">我的收货地址</view>
         </navigator>
-        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/addressList/addressList">
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/coupon/coupon">
             <view class="weui-cell__hd">
                 <image src="../../assets/icons/coupon.png" />
             </view>

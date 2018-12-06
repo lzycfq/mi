@@ -12,15 +12,3 @@
         </block>
     </view>
 </template>
-<!-- <template name="goods_list">
-    
-            <view class="goods-item">
-                <image class="goods-img {{is_new?'new':''}} {{on_sale?'on-sale':''}}" src="{{goods_cover}}" data-pid="{{id}}"
-                    mode="aspectFill" bindtap="showDetail" />
-                <text class="title">{{header}}</text>
-                <text class="desp">{{description}}</text>
-                <text class="meta">{{meta}}</text>
-                <text class="discount">{{discount}}</text>
-            </view>
-    
-</template> -->
