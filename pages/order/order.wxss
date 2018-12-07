@@ -1,0 +1,124 @@
+/* pages/order/order.wxss */
+/* pages/cart/cart.wxss */
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty-cart .cart-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 190rpx;
+    height: 190rpx;
+    margin-top: 100rpx;
+    border-radius: 50%;
+    background: #d6d6d6;
+}
+.cart-icon image{
+    width: 80rpx;
+    height: 80rpx;
+}
+.btn-warn,.prompt{
+    margin-top: 80rpx;
+}
+.btn-warn{
+    width: 580rpx;
+    letter-spacing: 4rpx;
+}
+.goods-intro .tab-select{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  background: #fff;
+}
+.brief,.parameter{
+  flex: 1;
+  font-size: 10pt;
+  text-align: center;
+}
+.tab-select text{
+  padding: 16rpx;
+}
+.on{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.goods-intro image{
+  display: block;
+  width: 100%;
+}
+.parameter-info,.brief-info{
+  display: none;
+}
+.show{
+  display: block;
+}
+.brief-info{
+  width:650rpx;
+  height:100%;
+  margin: 0 auto;
+}
+.brief-info .brief-infocontent{
+   width:100%;
+  height:250rpx;
+  margin-top: 20rpx;
+  border-radius: 13px;
+  background: white;
+  -moz-box-shadow:0px 0px 3px #99989E; -webkit-box-shadow:0px 0px 3px #99989E; box-shadow:0px 0px 3px #99989E;
+}
+.brief-info .brief-infocontent .left{
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+ position: relative;
+ top: 20rpx;
+  overflow: hidden;
+  
+}
+.brief-info .brief-infocontent .left image{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.brief-info .brief-infocontent .right{
+  width: 400rpx;
+  height: 200rpx;
+  float: left;  
+ padding: 40rpx 20rpx 10rpx;
+
+}
+.orderheader{
+  font-size: 24rpx;
+  float: left;  
+  
+}
+.orderzhuangtai{
+  float: right;
+  font-size: 24rpx;  
+  color: #ff6700;
+}
+.dec{
+  margin-top: 20rpx;
+  color: #999999;
+  float: left;    
+  font-size: 23rpx;
+}
+.meatgeshu{
+  position: relative;
+ top: 10rpx;
+}
+.meta{
+  float: left;
+  color: #ff6700;
+  font-size: 24rpx;
+}
+.geshu{
+  float: right;
+  color: #999999;
+  font-size: 24rpx;
+}

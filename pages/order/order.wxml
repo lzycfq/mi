@@ -1,0 +1,70 @@
+<view wx:if="{{order_list==''}}">
+  <view class="empty-cart">
+    <view class="cart-icon">
+      <image src="../../assets/icons/cart_empty.png" mode="aspectFill" />
+    </view>
+    <view class="prompt">商品订单为空喔</view>
+    <button type="warn" class="btn-warn" style="background: #ff6700;" bindtap="goIndex">到小米商城逛逛</button>
+  </view>
+</view>
+<view wx:else>
+  <block wx:for="{{order_list}}" wx:key="{{index}}">
+    <view class="goods-intro">
+        <view class="tab-select">
+            <view class="brief"><text class="{{selected?'on':''}}" bindtap="selectBrief">全部</text></view>
+            <view class="parameter"><text class="{{selected1?'on':''}}" bindtap="selectParameter">待发货</text></view>
+            <view class="parameter"><text class="{{selected2?'on':''}}" bindtap="selectFahuo">待收货</text></view>
+            <view class="parameter"><text class="{{selected3?'on':''}}" bindtap="selectPingjia">待评价</text></view>
+                        
+        </view>
+        <view class="brief-info {{selected?'show':''}}"wx:key="{{index}}">
+          <view class='brief-infocontent'>
+          <view class='left'><image src='../../assets/bg.png' mode='widthfill'></image></view>
+          <view class='right'>
+          <view><text class='orderheader'>随行茶花茶杯</text><text class='orderzhuangtai'>订单已完成</text></view>
+          <view class='dec'>被子轻巧可爱,提绳可提，亦可放背包,出差旅行必备神器</view>
+          <view class='meatgeshu'><text class='meta'>￥39</text><text class='geshu'>x1</text></view>
+          
+          </view>
+          
+          </view>
+        </view>
+        <view class="brief-info {{selected1?'show':''}}"  wx:key="{{index}}">
+          <view class='brief-infocontent'>
+          <view class='left'><image src='../../assets/bg.png' mode='widthfill'></image></view>
+          <view class='right'>
+          <view><text class='orderheader'>随行茶花茶杯</text><text class='orderzhuangtai'>订单已完成</text></view>
+          <view class='dec'>被子轻巧可爱,提绳可提，亦可放背包,出差旅行必备神器</view>
+          <view class='meatgeshu'><text class='meta'>￥39</text><text class='geshu'>x1</text></view>
+          
+          </view>
+          
+          </view>
+        </view>
+         <view class="brief-info {{selected2?'show':''}}" wx:key="{{index}}">
+       <view class='brief-infocontent'>
+          <view class='left'><image src='../../assets/bg.png' mode='widthfill'></image></view>
+          <view class='right'>
+          <view><text class='orderheader'>随行茶花茶杯</text><text class='orderzhuangtai'>订单已完成</text></view>
+          <view class='dec'>被子轻巧可爱,提绳可提，亦可放背包,出差旅行必备神器</view>
+          <view class='meatgeshu'><text class='meta'>￥39</text><text class='geshu'>x1</text></view>
+          
+          </view>
+          
+          </view>
+        </view>
+        <view class="brief-info {{selected3?'show':''}}"  wx:key="{{index}}">
+          <view class='brief-infocontent'>
+          <view class='left'><image src='../../assets/bg.png' mode='widthfill'></image></view>
+          <view class='right'>
+          <view><text class='orderheader'>随行茶花茶杯</text><text class='orderzhuangtai'>订单已完成</text></view>
+          <view class='dec'>被子轻巧可爱,提绳可提，亦可放背包,出差旅行必备神器</view>
+          <view class='meatgeshu'><text class='meta'>￥39</text><text class='geshu'>x1</text></view>
+          
+          </view>
+          
+          </view>
+        </view>
+    </view>
+</block>
+</view>
