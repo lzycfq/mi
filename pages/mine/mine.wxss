@@ -1,7 +1,7 @@
 /* pages/mine/mine.wxss */
 .weui-cells {
     margin-top: 18rpx;
-    font-size: 12pt;
+    font-size: 30rpx;
 }
 .weui-cell.head {
     padding: 8px 14px;
@@ -88,7 +88,7 @@ text-align: center;
 .ewmborder{
   width: 75%;
   height: 480rpx;
-  border: darkgray 1px solid;
+  
   margin: 0 auto;
 }
 .ewm{
@@ -112,4 +112,15 @@ font-size:26rpx;
 }
 .bottomwenzi text{
   text-align: center;
+}
+
+
+
+.weui-cells .jingping{
+  width:53rpx;
+height:53rpx;
+margin-right:21px;
+margin-left:15rpx;
+vertical-align:middle;
+
 }

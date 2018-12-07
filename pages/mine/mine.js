@@ -5,8 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    erweima: true,
-    
+    erweima: false,
     userInfo: {
       avatarUrl: "",//用户头像
       nickName: "",//用户昵称

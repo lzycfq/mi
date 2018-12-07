@@ -19,6 +19,16 @@
             </view>
         </view>
     </view>
+<!-- 小米精品区 -->
+    <view class="weui-cells">
+<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/order/order">
+            <view class="weui-cell__hd">
+                <image class='jingping' src="../../assets/jp.png" />
+            </view>
+            <view class="weui-cell__bd">小米精品推荐</view>
+        </navigator>
+</view>
+
     <view class="weui-cells">
         <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/order/order">
             <view class="weui-cell__hd">
