@@ -14,7 +14,7 @@
             </view>
             <view class="weui-cell__ft">
                 <view class="qrCode">
-                    <image src="../../assets/icons/qrcode.png" />
+                    <image src="../../assets/icons/qrcode.png"  bindtap="onChangeShowState"/>
                 </view>
             </view>
         </view>
@@ -53,4 +53,16 @@
             <view class="weui-cell__bd">设置</view>
         </navigator>
     </view>
+</view>
+
+<!-- 二维码view -->
+<view wx:if="{{erweima}}" class='erweima'>
+<view class='erweimacontent'>
+<view class='gb'><image class='close' src='../../assets/close.png'  bindtap="onChangeShowState"></image></view>
+<view style='clear:both'></view>
+<view class='katong'><image src='../../assets/katong.png'></image></view>
+<view class='bianma'>12585336965sasd</view>
+<view class='ewmborder'><image class='ewm' src='../../assets/1544152635.png'></image></view>
+<view class='bottomwenzi'><text>去小米之家扫一扫，商城优惠券线下用</text></view>
+</view>
 </view>

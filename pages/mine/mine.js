@@ -5,9 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    erweima: true,
+    
     userInfo: {
       avatarUrl: "",//用户头像
       nickName: "",//用户昵称
+      
     }
   },
 //  获取用户信息
@@ -28,8 +31,17 @@ Page({
         })
       }
     })
+   
+   
   },
-
+  // 隐藏和显示
+  onChangeShowState(e){
+var that=this
+var erweima=that.data.erweima
+that.setData({
+  erweima:!that.data.erweima
+})
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

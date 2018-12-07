@@ -45,3 +45,71 @@
     border-radius: 6rpx;
 }
 
+
+/* 二维码view */
+.erweima{
+  width: 750rpx;
+  height: 100%;
+ 
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  background: white;
+}
+.erweimacontent{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.erweimacontent view .close{
+  width: 54rpx;
+  height: 54rpx;
+  float: right;
+
+}
+.erweimacontent .katong image{
+  position: relative;
+  top: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+ display: block;
+ margin: 0 auto;
+}
+.bianma{
+   position: relative;
+  top: 50rpx;
+  width: 300rpx;
+  height: 120rpx;
+text-align: center;
+ margin: 0 auto;
+ color: #999999;
+ font-size: 26rpx;
+}
+.ewmborder{
+  width: 75%;
+  height: 480rpx;
+  border: darkgray 1px solid;
+  margin: 0 auto;
+}
+.ewm{
+   position: relative;
+  top: 30rpx;
+  width: 420rpx;
+  height: 420rpx;
+ display: block;
+ margin: 0 auto;
+}
+.bottomwenzi{
+  position: absolute;
+  bottom:50rpx;
+width: 90%;
+text-align: center;
+margin:0 auto;
+color:#999999;
+font-size:26rpx;
+
+
+}
+.bottomwenzi text{
+  text-align: center;
+}
