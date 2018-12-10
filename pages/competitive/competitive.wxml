@@ -1,0 +1,33 @@
+<!--pages/competitive/competitive.wxml-->
+<!-- headimg -->
+<view class='competitive_tuijian'>
+<image src='../../assets/competitivebg.jpg' bindtap='rebate'></image>
+</view>
+<!-- nav -->
+<view class="ShopNavsecond">
+<block  wx:for="{{nav_data_competitive}}" wx:key="index">
+	<navigator url="{{item.nav_urls}}" hover-class="none"><view><image src="{{item.nav_img}}"></image><span>{{item.nav_title}}</span></view>	</navigator>
+</block>
+</view>
+<!-- list -->
+<view class='competitive_list'>
+<text class='competitive_list_header'>限时促销</text>
+<view class='competitive_list_fubiaoti'><text class='left'>官方活动,易于成单</text><view  class='right'>更多<image src='../../assets/right_arrow.png'></image></view></view>
+<!-- 列表 -->
+<view style='clear:both'></view>
+<view class='list'>
+<view class='list_left'>
+
+<view><image src='https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/1ead740b0b821cc3fe5f9f8161cc4fa3.jpg?thumb=1&w=360&h=360'></image></view>
+</view>
+<view class='list_right'>
+<text class='list_right_header'>小米电视40寸</text>
+<view class='list_right_jieshao'>4k HDR 人工智能系统，智能互动，助力新生活</view>
+<text class='list_right_manjian'>满减</text>
+<view><view class='lrl'><label>￥3699</label><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text class='lrl_yuanjia'>3999</text></view><view class='lrr'><image src='../../assets/icons/share.png'></image></view></view>
+</view>
+
+
+</view>
+</view>
+

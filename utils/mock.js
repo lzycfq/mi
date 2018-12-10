@@ -67,6 +67,35 @@ export default {
         nav_title: "每日精选"
       }
     ],
+
+  nav_data_competitive: [{
+    nav_urls: "",
+    nav_img: "../../assets/icons/c1.png",
+    nav_title: "家电"
+  },
+  {
+    nav_urls: "",
+    nav_img: "../../assets/icons/c2.png",
+    nav_title: "电视"
+  },
+  {
+    nav_urls: "",
+    nav_img: "../../assets/icons/c3.png",
+    nav_title: "耳机"
+  },
+  {
+    nav_urls: "",
+    nav_img: "../../assets/icons/c4.png",
+    nav_title: "生活"
+  },
+  {
+    nav_urls: "",
+    nav_img: "../../assets/icons/c5.png",
+    nav_title: "更多"
+  },
+ 
+  ],
+
     index_activity: [{
         id: 3,
         img_url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d90dc8f6466deb4b0a17d9d4b8ba4a6a.jpg?thumb=1&w=358&h=508"
@@ -288,6 +317,9 @@ export default {
             ]
         }
     ],
+  
+
+
     category: [
         {
             id: "new",
