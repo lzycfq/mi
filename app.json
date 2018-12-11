@@ -1,7 +1,8 @@
 {
     "pages": [
+
       "pages/competitive/competitive",
-          "pages/mine/mine",
+                "pages/mine/mine",
           "pages/index/index",
       "pages/order/order",
   

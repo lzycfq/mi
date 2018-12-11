@@ -95,6 +95,33 @@ export default {
   },
  
   ],
+  competitive_list:[
+    {
+   "index":1,
+    "cimg":"https://i8.mifile.cn/b2c-mimall-media/b476329b3b26a6ac8e13e00ac68e623d.jpg?w=1212&h=716",
+    "header":"小米电视 4x 60英寸",
+    "desc":"4K HDR，钢琴烤漆,人工智能，助力生活每一天",
+    "jiage":"3699",
+   "yuanjia":"39999"
+  },
+
+    {
+      "index": 2,
+      "cimg": "https://i8.mifile.cn/b2c-mimall-media/0feba857062316b4b116866c8ccf762c.jpg?w=1212&h=716",
+      "header": "小米电视4x 55英寸",
+      "desc": "4K 人工智能，分享生活",
+      "jiage": "4699",
+      "yuanjia":"4999"
+    },
+    {
+      "index": 3,
+      "cimg": "//i8.mifile.cn/b2c-mimall-media/bb88f550e5b553baacce597c8846a8e8.jpg?w=1212&h=716",
+      "header": "55'' 电视4C 体育版",
+      "desc": "4K 钢琴烤漆 超窄边框设计,超强爆发快感",
+      "jiage": "4699",
+      "yuanjia": "4999"
+    }
+  ],
 
     index_activity: [{
         id: 3,
