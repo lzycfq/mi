@@ -32,13 +32,19 @@ Page({
 
   
 
-  onShareAppMessage: function () {
-    var index=this.data.index
-    console.log(index)
+  onShareAppMessage: function (e) {
+    var that=this
+    var index = parseInt(e.target.dataset.index);
+    console.log(index);
+  
+    console.log(that.data.competitive_list[index].header)
+    console.log(that.data.competitive_list[index].cimg)
+
     return {
-      title: '',
-      path: '/page/user?id=123'
+      title: "我发现了一个好物，赶快看看吧" +that.data.competitive_list[index].header,
+      path: 'pages/goods/show?{{item.showid}}',
+      imageUrl: that.data.competitive_list[index].cimg
     }
   }
-  
+
 })

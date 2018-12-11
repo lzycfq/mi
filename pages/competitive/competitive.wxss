@@ -146,8 +146,8 @@ top: 60rpx;
 
 /* 分享 */
 .showAnswer {
-  width: 100%;
-  height:160rx;
+  width:700rpx;
+  height:140rx;
   position: fixed;
   bottom: 0;
   transition: height 0.25s;
@@ -163,7 +163,7 @@ top: 60rpx;
   bottom: 0;
   background: #555;
   transition: height 0.25s;
-  line-height: 36px;
+  line-height: 50rpx;
 }
 .ShopNavseconds {
 background: white;
@@ -175,21 +175,26 @@ background: white;
 	height: 84rpx;
   width: 84rpx;
 }
-
- .ShopNavseconds view {
-	width:50%;
+.ShopNavseconds .btn{
+  text-align: center;
+width: 350rpx;
+float: left;
+background: white;
+}
+ .ShopNavseconds  .btn view {
+	width:100%;
 	text-decoration: none;
-	height: 160rpx;
+	height: 140rpx;
 	text-align: center;
-	float: left;
-	margin-top:15rpx;
+	
+	margin-top:10rpx;
   
 }
 .ShopNavseconds view span {
 	width: 100%;
 	float: left;
 	position: relative;
-  line-height: 15rpx;
+  line-height: 1rpx;
 	font-size: 24rpx;
 	color:#888888;
 	

@@ -115,7 +115,7 @@ export default {
     },
     {
       "index": 3,
-      "cimg": "//i8.mifile.cn/b2c-mimall-media/bb88f550e5b553baacce597c8846a8e8.jpg?w=1212&h=716",
+      "cimg": "http://i8.mifile.cn/b2c-mimall-media/bb88f550e5b553baacce597c8846a8e8.jpg?w=1212&h=716",
       "header": "55'' 电视4C 体育版",
       "desc": "4K 钢琴烤漆 超窄边框设计,超强爆发快感",
       "jiage": "4699",

@@ -15,7 +15,7 @@
 <view class='competitive_list_fubiaoti'><text class='left'>官方活动,易于成单</text><view  class='right'>更多<image src='../../assets/right_arrow.png'></image></view></view>
 <!-- 列表 -->
 <view style='clear:both'></view>
-<view class='list' wx:for="{{competitive_list}}" wx:key="{{index}}" data-index="{{item.index}}">
+<view class='list' wx:for="{{competitive_list}}" wx:key="{{index}}">
 <view class='list_left'>
 <view><image src='{{item.cimg}}'></image></view>
 </view>
@@ -25,18 +25,22 @@
 <text class='list_right_manjian'>满减</text>
 <view><view class='lrl'><label>￥{{item.jiage}}</label><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text class='lrl_yuanjia'>{{item.yuanjia}}</text></view><view class='lrr'><image src='../../assets/icons/share.png'  bindtap='showAnswer'></image></view></view>
 </view>
-</view>
 
-
-
-</view>
 
 <!-- 触发分享 -->
 <view class='{{answer? "showAnswer" : "foldAnswer"}}'>
   <view class='ok'>
    <view class="ShopNavseconds">
-	<view bindtap='share'><image src="../../assets/icons/wechat.png"></image><span>发送给朋友</span></view>
-	<view  bindtap='baocun'><image src="../../assets/icons/pengyouquan.png" ></image><span>保存并分享到朋友圈</span></view>
+	 <button open-type='share' class='btn' bindtap='foldAnswer' data-index="{{index}}" ><view><image src="../../assets/icons/wechat.png"></image><span>发送给朋友</span></view> </button>
+<button  class='btn'>	<view  bindtap='baocun'><image src="../../assets/icons/pengyouquan.png" ></image><span>保存并分享到朋友圈</span></view></button>
 </view>
   </view>
 </view>
+
+</view>
+
+
+
+</view>
+
+
