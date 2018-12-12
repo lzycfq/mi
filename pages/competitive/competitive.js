@@ -6,13 +6,15 @@ Page({
     nav_data_competitive:[],
     competitive_list:[],
     maskHidden: false,
-    answer: false
+    answer: false,
+    shareIndex: 0
   },
-  
-// 触发分享js
-  showAnswer: function () {
+
+  // 触发分享js
+  showAnswer: function (e) {
     this.setData({
-      answer: true
+      answer: true,
+      shareIndex: e.currentTarget.dataset.index
     })
   },
   foldAnswer: function () {
@@ -33,15 +35,15 @@ Page({
   
 
   onShareAppMessage: function (e) {
-    var that=this
+    var that = this
     var index = parseInt(e.target.dataset.index);
     console.log(index);
-  
+
     console.log(that.data.competitive_list[index].header)
     console.log(that.data.competitive_list[index].cimg)
 
     return {
-      title: "我发现了一个好物，赶快看看吧" +that.data.competitive_list[index].header,
+      title: "我发现了一个好物，赶快看看吧" + that.data.competitive_list[index].header,
       path: 'pages/goods/show?{{item.showid}}',
       imageUrl: that.data.competitive_list[index].cimg
     }
