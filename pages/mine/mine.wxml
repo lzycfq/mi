@@ -21,7 +21,7 @@
     </view>
 <!-- 小米精品区 -->
     <view class="weui-cells">
-<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/order/order">
+<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/competitive/competitive">
             <view class="weui-cell__hd">
                 <image class='jingping' src="../../assets/jp.png" />
             </view>

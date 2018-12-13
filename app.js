@@ -9,6 +9,9 @@ App({
     // console.log(this.globalData);
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    appid:"",
+    secret:"",
+    openid:'hello'
   }
 })

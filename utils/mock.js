@@ -37,7 +37,7 @@ export default {
             nav_title: "智能"
         },
         {
-            nav_urls: "",
+          nav_urls: "/pages/newproduct/newproduct",
             nav_img: "../../assets/nav_img/16.png",
             nav_title: "新品"
         },

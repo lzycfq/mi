@@ -2,6 +2,8 @@
 var xiugaiaddress = null;
 Page({
   data: {
+
+    
     addressList: [],
     'checkAll': false,
     'totalCount': 0,
