@@ -1100,5 +1100,54 @@ export default {
           image: 'https://i1.mifile.cn/a4/cms_1478139217532_zibhc.jpg',
           duration_raw: 199,
         }
-      ]
+      ],
+  newfirst:[{
+      imgUrls:[{
+        newfirstimg: "http://i1.mifile.cn/f/i/2018/mix3/index_section04_2.jpg",
+      },
+        {
+          newfirstimg: "http://i1.mifile.cn/f/i/2018/mix3/index_section05_2.jpg",
+        },
+      ],
+    title:"小米MIX3宫廷版",
+    desc:"精致的四曲面陶瓷机身，经典的黑色陶瓷，优雅大气，天然翡翠色，如玉般典雅高贵，与四曲面陶瓷浑然天成，掌心间尽是璀璨光彩。",
+    newfirstID:1,
+    newsfirstimg:"//i1.mifile.cn/a4/54e35fdd-bc68-4a89-bad7-c9c3bb2fc6fe",
+    newstitle:"米家压力IH电饭煲",
+    mewstime:"12-14",
+    newsrenshu:"258963",
+    zhanshi:[
+      {
+      zhanshiimg:"https://i1.mifile.cn/a4/xmad_15349041091303_OpIrD.jpg",
+      touxiang:"https://i1.mifile.cn/a1/pms_1495795724.388634!140x140.jpg",
+      righttitle:"橙子猪",
+      wlefttime:"2018-12-14",
+      wrightzan:"15",
+      pinglunID:1
+
+     },
+      {
+        zhanshiimg: "https://i1.mifile.cn/a4/xmad_15284596646115_wNMGC.jpg",
+        touxiang: "https://i1.mifile.cn/a4/3332da7d-4056-4694-9548-c83b7b3af7d3",
+        righttitle: "草莓",
+        wlefttime: "2018-12-15",
+        wrightzan: "155",
+        pinglunID: 2
+
+      },
+    ],
+  },
+    {
+      imgUrls: [{newfirstimg: "http://i1.mifile.cn/f/i/2018/mi8ud/model_02.jpg",}],
+      title: "小米8指纹版",
+      desc: "全球首款 压感屏幕指纹识别，轻压屏幕，即刻解锁。触屏瞬间，解锁如梦幻般绚烂。",
+      newfirstID: 2,
+      newsfirstimg: "http://i1.mifile.cn/a4/aa6b038a-2946-4549-acff-17c58e701556",
+      newstitle: "小米插线板",
+      mewstime: "12-13",
+      newsrenshu: "368963"
+
+    },
+
+  ]
 }

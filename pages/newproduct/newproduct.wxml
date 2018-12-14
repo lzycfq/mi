@@ -1,0 +1,92 @@
+<!--pages/newproduct/newproduct.wxml-->
+ <view class='tab'>
+      <view class="navbar">
+        <view class="navbar-item" wx:for="{{navbar}}" wx:key="index" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+        <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+        </view>
+    </view>
+  </view>
+<!-- 新品 -->
+<scroll-view class="hot-item-container {{currentNavbar==0 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;"
+  scroll-y="true" bindscrolltolower="pullUpLoad">
+  <view class='newfirstall'>
+  <block  wx:for="{{newfirst}}" wx:key="{{index}}">
+  <view class='newfirst'>
+<swiper class='newswiper' indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="white" circular="true">
+    <block wx:for="{{item.imgUrls}}" wx:key="index">
+      <navigator url="/pages/goods/show?{{item.newfirstID}}">
+      <swiper-item>
+        <image src="{{item.newfirstimg}}" class="slide-image"  />
+      </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+ <!-- 介绍 -->
+<view class='jieshao'>
+<view class='left'>
+<view class='title'>{{item.title}}</view>
+<view class='leftcontent'>{{item.desc}}</view>
+</view>
+<view class='right'>
+<navigator url='pages/good/show?{{item.newfirstID}}'><view class='nowbuy'>去购买</view></navigator>
+</view>
+</view>
+<!-- 分割线 -->
+<view style='clear:both'></view> 
+<!-- 新闻 -->
+ <view class='news'>
+<view class='newscontent'>
+
+<view class='left'>
+<image src='{{item.newsfirstimg}}'></image>
+</view>
+<view class='right'>
+<text>{{item.newstitle}}!</text>
+<view class='newsbottom'><view class='newsleft'>{{item.mewstime}}</view><view class='newsright'>{{item.newsrenshu}}阅读</view></view>
+</view>
+</view>
+</view>
+<!-- 展示区 -->
+<view class='newszhanshiqu'>
+<block wx:for="{{item.zhanshi}}" wx:key="{{index}}" wx:if="{{index<2}}">
+
+<view class='list'>
+<navigator url='/pages/pinglun/pinglun?{{item.pinglunID}}'><view class='zhanshiimg'><image  src='{{item.zhanshiimg}}' mode='scaleToFill'></image></view> </navigator>
+<!-- 分割线 -->
+<view style='clear:both'></view> 
+<view class='zsqbg'>
+<view class='left'><image src='{{item.touxiang}}' ></image></view>
+<view class='right'>
+<view class='righttitle'>{{item.righttitle}}</view>
+<view><text class="wleft">{{item.wlefttime}}</text><text class="wright">{{item.wrightzan}}赞</text></view>
+</view>
+</view>
+</view>
+
+</block> 
+</view>
+  </view>
+  </block>
+  </view>
+</scroll-view>
+
+<!-- 电视 -->
+<scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
+  2
+</scroll-view>
+
+<!-- 笔记本 -->
+<scroll-view class="hot-item-container {{currentNavbar==2 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;"
+  scroll-y="true" bindscrolltolower="pullUpLoad">
+1
+  
+</scroll-view>
+
+<!-- 智慧生活 -->
+<scroll-view class="latest-item-container {{currentNavbar==3 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
+  2
+</scroll-view>
+<!-- 运动健康 -->
+<scroll-view class="latest-item-container {{currentNavbar==4 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
+  2
+</scroll-view>
