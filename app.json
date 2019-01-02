@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/newproduct/newproduct",
     "pages/information/information",
    
-    "pages/mine/mine",
+   
     "pages/competitive/competitive",
     "pages/index/index",
     "pages/order/order",
