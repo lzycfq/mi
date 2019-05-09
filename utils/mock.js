@@ -115,7 +115,7 @@ export default {
     },
     {
       "index": 3,
-      "cimg": "http://i8.mifile.cn/b2c-mimall-media/bb88f550e5b553baacce597c8846a8e8.jpg?w=1212&h=716",
+      "cimg": "http://i8.mifile.cn/b2c-mimall-media/bb88f550e5b553baacce597c8846a8.jpg?w=1212&h=716",
       "header": "55'' 电视4C 体育版",
       "desc": "4K 钢琴烤漆 超窄边框设计,超强爆发快感",
       "jiage": "4699",
@@ -178,7 +178,7 @@ export default {
         },
         {
             id: 7,
-            img_url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4948d78d63db71278fd194e8d7ead35d.jpg?thumb=1&w=720&h=440",
+            img_url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4948d78d63db71278fd194d7ead35d.jpg?thumb=1&w=720&h=440",
             section: [{
                     id: 8,
                     goods_cover: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5603273010ab9182a1527cfab5cd2a9e.jpg?thumb=1&w=360&h=360",
@@ -222,7 +222,7 @@ export default {
         },
         {
             id: 31,
-            img_url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/122b6425e2a48a41dd0409467a84de87.jpg?thumb=1&w=720&h=440",
+            img_url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/122b6425e2a48a41dd0409467a84d7.jpg?thumb=1&w=720&h=440",
             section: [{
                     id: 200,
                     goods_cover: "https://i8.mifile.cn/v1/a1/83236155-6190-abba-e76c-e2a488fb3350!360x360.webp",
@@ -293,7 +293,7 @@ export default {
                 },
                 {
                     id: 71,
-                    goods_cover: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ffe8610a808d8254fb5d37b141d0bf5f.jpg?thumb=1&w=360&h=360",
+                    goods_cover: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ff610a808d8254fb5d37b141d0bf5f.jpg?thumb=1&w=360&h=360",
                     header: "小米路由器4",
                     description: "双频双核 更快更稳定",
                     meta: "199元",
@@ -451,7 +451,7 @@ export default {
                     item_name: "笔记本13.3''"
                 },
                 {
-                    item_img: "https://i8.mifile.cn/v1/a1/78e8a82a-1ef7-453b-5a07-d8394081ae2e!120x120.png",
+                    item_img: "https://i8.mifile.cn/v1/a1/78a82a-1ef7-453b-5a07-d8394081ae2e!120x120.png",
                     item_name: "笔记本12.5''"
                 }
             ]
@@ -481,7 +481,7 @@ export default {
                     item_name: "米家投影仪"
                 },
                 {
-                    item_img: "https://i8.mifile.cn/v1/a1/91cd8c44-11ca-79bd-429f-de882bdeaf3b!120x120.png",
+                    item_img: "https://i8.mifile.cn/v1/a1/91cd8c44-11ca-79bd-429f-d82bdeaf3b!120x120.png",
                     item_name: "电水壶"
                 }
             ]
@@ -503,7 +503,7 @@ export default {
                     item_name: "笔记本13.3''"
                 },
                 {
-                    item_img: "https://i8.mifile.cn/v1/a1/78e8a82a-1ef7-453b-5a07-d8394081ae2e!120x120.png",
+                    item_img: "https://i8.mifile.cn/v1/a1/78a82a-1ef7-453b-5a07-d8394081ae2e!120x120.png",
                     item_name: "笔记本12.5''"
                 }
             ]
@@ -688,7 +688,7 @@ export default {
                 },
                 {
                     id: 52,
-                    cover_img: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5e2b058695f8405c9ce6bd5ab1be828f.jpg?thumb=1&w=720&h=360",
+                    cover_img: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5e2b058695f8405c9ce6bd5ab1b28f.jpg?thumb=1&w=720&h=360",
                     header: "游戏本 15.6'' i7 GTX 1060 16GB",
                     description: "电竞级性能怪兽，冷酷到底的散热系统",
                     meta: "8999元",
@@ -754,7 +754,7 @@ export default {
             },
             {
                 id: 58,
-                goods_cover: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3b06702e8e7421404c8c6b0446bfbf3d.jpg?thumb=1&w=360&h=360",
+                goods_cover: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3b06702e7421404c8c6b0446bfbf3d.jpg?thumb=1&w=360&h=360",
                 header: "游戏本15.6'' i7 8GB",
                 description: "i7标压处理器",
                 meta: "7999元",
@@ -775,11 +775,11 @@ export default {
                 },
                 {
                     id:10002,
-                    slide_url:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2764f1f61a5a7691ee5f4998e6e83666.jpg?thumb=1&w=720&h=792"
+                    slide_url:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2764f1f61a5a7691ee5f4998e63666.jpg?thumb=1&w=720&h=792"
                 },
                 {
                     id:10003,
-                    slide_url:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9b0900deeb89fb9b2ee8faa239a27380.jpg?thumb=1&w=720&h=792"
+                    slide_url:"https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9b0900deeb89fb9b2efaa239a27380.jpg?thumb=1&w=720&h=792"
                 },
                 {
                     id:10004,
@@ -869,7 +869,7 @@ export default {
                 },
                 {
                     id:50002,
-                    slide_url:"https://i8.mifile.cn/v1/a1/7d040eee-5569-5074-864d-8c03f073e8c8!720x792.webp"
+                    slide_url:"https://i8.mifile.cn/v1/a1/7d040eee-5569-5074-864d-8c03f073c8!720x792.webp"
                 },
                 {
                     id:50003,
@@ -899,12 +899,12 @@ export default {
             },
             intro_img:[
                 "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2132c260499c16d1869eb626e474bf6f.jpg?w=1080&h=1911",
-                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5a2b607dedce85d0c297390a1333c092.jpg?w=1080&h=1088",
+                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5a2b607dedc5d0c297390a1333c092.jpg?w=1080&h=1088",
                 "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e46176f155fb31199d39d34a3bd4cf22.jpg?w=1080&h=1920"
             ],
             parameter_img:[
                 "https://i8.mifile.cn/v1/a1/84598e4e-5d4e-46fa-52a4-2fa38b05ec7c.webp?w=1080&h=1349",
-                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/6cca4e894e086aa86292f75acd45c783.jpg?w=1080&h=2241"
+                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/6cca494e086aa86292f75acd45c783.jpg?w=1080&h=2241"
             ]
         },
         {
@@ -1031,7 +1031,7 @@ export default {
             },
             intro_img:[
                 "https://i8.mifile.cn/v1/a1/c5f6d8bb-dbdb-901f-38fc-4cf7aea1fb86.jpg?w=1080&h=1924&s=177.7",
-                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c580424ff305584b2287c124bbae8fad.jpg?w=1080&h=1549"
+                "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c580424ff305584b2287c124bbafad.jpg?w=1080&h=1549"
             ],
             parameter_img:[
                 "https://i8.mifile.cn/v1/a1/dbd53e91-75eb-d9e9-0969-326a41435a34.jpg?w=1080&h=1287&s=148.5",
